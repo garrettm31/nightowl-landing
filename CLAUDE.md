@@ -32,7 +32,7 @@ src/
     problem.tsx       # Problem statement section
     how-it-works.tsx  # How it works steps
     features.tsx      # Feature highlights
-    pricing.tsx       # Pricing tiers
+    pricing.tsx       # Pricing tiers 
     faq.tsx           # FAQ accordion
     cta-banner.tsx    # Call-to-action banner
     footer.tsx        # Footer
