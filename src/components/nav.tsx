@@ -18,8 +18,24 @@ export function Nav() {
     <nav className="sticky top-0 z-50 backdrop-blur-md bg-night-950/80 border-b border-night-800/50">
       <div className="flex items-center justify-between px-5 md:px-6 py-4 max-w-7xl mx-auto">
         <a href="#" className="flex items-center gap-2.5">
-          <div className="h-8 w-8 rounded-lg bg-owl-500 flex items-center justify-center text-sm font-bold text-white">
-            N
+          <div className="h-8 w-8 rounded-lg bg-owl-500 flex items-center justify-center">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-5 w-5">
+              {/* Ear tufts */}
+              <path d="M8 4L10 10" stroke="white" strokeWidth="2" strokeLinecap="round" />
+              <path d="M24 4L22 10" stroke="white" strokeWidth="2" strokeLinecap="round" />
+              {/* Head */}
+              <ellipse cx="16" cy="17" rx="10" ry="11" fill="white" />
+              {/* Left eye ring */}
+              <circle cx="12" cy="15" r="4.5" fill="#635bff" />
+              <circle cx="12" cy="15" r="2.5" fill="white" />
+              <circle cx="12.5" cy="14.5" r="1.5" fill="#1a1a2e" />
+              {/* Right eye ring */}
+              <circle cx="20" cy="15" r="4.5" fill="#635bff" />
+              <circle cx="20" cy="15" r="2.5" fill="white" />
+              <circle cx="20.5" cy="14.5" r="1.5" fill="#1a1a2e" />
+              {/* Beak */}
+              <path d="M14.5 19.5L16 22L17.5 19.5" fill="#f59e0b" stroke="#f59e0b" strokeWidth="0.5" strokeLinejoin="round" />
+            </svg>
           </div>
           <span className="text-[17px] font-semibold tracking-tight text-white">
             NightOwl
