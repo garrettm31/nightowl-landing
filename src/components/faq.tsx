@@ -24,10 +24,16 @@ export function FAQ() {
         <div className="mt-14 space-y-3">
           {FAQ_ITEMS.map((item, i) => (
             <AnimatedSection key={i} delay={0.05 + i * 0.05}>
-              <div className="rounded-xl border border-night-700/50 bg-night-800/30 overflow-hidden">
+              <div
+                className={`rounded-xl border bg-night-800/30 overflow-hidden transition-colors ${
+                  openIndex === i
+                    ? "border-owl-500/40"
+                    : "border-night-700 hover:border-night-500"
+                }`}
+              >
                 <button
                   onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                  className="w-full flex items-center justify-between px-6 py-5 text-left"
+                  className="w-full flex items-center justify-between px-6 py-5 text-left cursor-pointer hover:bg-night-800/50 transition-colors"
                 >
                   <span className="text-[15px] font-medium text-white pr-4">
                     {item.question}
@@ -35,8 +41,13 @@ export function FAQ() {
                   <motion.div
                     animate={{ rotate: openIndex === i ? 180 : 0 }}
                     transition={{ duration: 0.2 }}
+                    className="shrink-0"
                   >
-                    <ChevronDown className="h-5 w-5 text-night-400 shrink-0" />
+                    <ChevronDown
+                      className={`h-5 w-5 transition-colors ${
+                        openIndex === i ? "text-owl-400" : "text-night-400"
+                      }`}
+                    />
                   </motion.div>
                 </button>
                 <AnimatePresence>
