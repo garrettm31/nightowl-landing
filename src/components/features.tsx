@@ -15,13 +15,13 @@ const features = [
     icon: Calendar,
     title: "Appointment booking",
     description:
-      "Checks your real Google Calendar, offers available slots, and books confirmed appointments — all in a single phone conversation.",
+      "Checks your real chair calendar, offers open slots, and books confirmed cuts — all in a single phone conversation. No double-booking, no back-and-forth.",
   },
   {
     icon: MessageSquare,
     title: "Message capture",
     description:
-      "When booking isn't right, NightOwl captures caller name, number, reason, and preferred callback time. Sends you a structured SMS instantly.",
+      "When a client can't book a slot right then, NightOwl captures their name, number, and preferred callback time. Sends you a structured SMS instantly.",
   },
   {
     icon: Mic,

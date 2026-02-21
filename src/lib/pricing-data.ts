@@ -15,7 +15,7 @@ export const PRICING_TIERS: PricingTier[] = [
     price: 39,
     callsIncluded: 50,
     overageRate: 1.5,
-    description: "For solo practices and small shops",
+    description: "Perfect for single-chair and solo barbers",
     features: [
       "Up to 50 calls/month",
       "1 local phone number",
@@ -33,7 +33,7 @@ export const PRICING_TIERS: PricingTier[] = [
     price: 99,
     callsIncluded: 150,
     overageRate: 1.0,
-    description: "For growing practices and busy offices",
+    description: "For busy shops with multiple barbers",
     features: [
       "Up to 150 calls/month",
       "2 phone numbers",

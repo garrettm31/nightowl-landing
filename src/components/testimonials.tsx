@@ -3,31 +3,31 @@ import { SectionHeader } from "./ui/section-header";
 
 const testimonials = [
   {
-    initials: "JL",
-    color: "bg-blue-600",
-    name: "Jamie L.",
-    business: "Lakeside Dental",
-    city: "Denver, CO",
-    quote:
-      "We were losing almost a third of our after-hours calls to voicemail. NightOwl fixed that in one afternoon. My front desk is less stressed and we haven't missed a booking since.",
-  },
-  {
-    initials: "MT",
+    initials: "DW",
     color: "bg-amber-600",
-    name: "Marcus T.",
-    business: "West End Barbershop",
-    city: "Austin, TX",
+    name: "Darnell W.",
+    business: "Cuts by Darnell",
+    city: "Atlanta, GA",
     quote:
-      "Clients book at midnight now. I wake up to a full calendar — no missed calls, no callbacks. Honestly I just wish I had set this up two years ago.",
+      "I was losing walk-in calls every night after 7 PM. Now clients book their slot at 11 PM and I wake up to a full chair. Wish I had this from day one.",
   },
   {
-    initials: "SR",
-    color: "bg-rose-600",
-    name: "Sandra R.",
-    business: "Paws & Claws Vet Clinic",
-    city: "Seattle, WA",
+    initials: "RV",
+    color: "bg-blue-600",
+    name: "Ramon V.",
+    business: "Fade & Fresh Barbershop",
+    city: "Houston, TX",
     quote:
-      "Pet owners call in a panic at 10 PM and NightOwl handles it calmly. It books the appointment and texts me a summary. Exactly what a busy clinic needs.",
+      "We've got four barbers and coordinating bookings was a mess. NightOwl handles the after-hours calls, fills the chairs, and texts us each a summary. It just works.",
+  },
+  {
+    initials: "TK",
+    color: "bg-teal-600",
+    name: "Tyler K.",
+    business: "The Sharp Gentleman",
+    city: "Chicago, IL",
+    quote:
+      "A client called at 10:30 on a Friday night to book a Saturday cut. NightOwl grabbed it, confirmed the slot, and I never even woke up. That's the dream.",
   },
 ];
 
@@ -38,7 +38,7 @@ export function Testimonials() {
         <AnimatedSection>
           <SectionHeader
             label="Customer Stories"
-            heading="Businesses that stopped missing calls"
+            heading="Barbers that stopped missing bookings"
             centered
           />
         </AnimatedSection>

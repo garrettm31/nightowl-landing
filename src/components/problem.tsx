@@ -8,12 +8,12 @@ const painPoints = [
   {
     icon: PhoneMissed,
     title: "Missed calls, lost revenue",
-    body: "62% of callers won't leave a voicemail. They'll call your competitor instead.",
+    body: "62% of callers won't leave a voicemail. They'll book a slot at the shop down the street instead.",
   },
   {
     icon: Clock,
     title: "Voicemail phone tag",
-    body: "You call back the next day. They don't answer. You try again. They've already booked elsewhere.",
+    body: "You call back the next day. They don't answer. You try again. They've already got a cut somewhere else.",
   },
   {
     icon: Frown,

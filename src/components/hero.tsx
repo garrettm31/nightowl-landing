@@ -1,12 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Phone } from "lucide-react";
+import { Phone, Play, Scissors } from "lucide-react";
 import { Button } from "./ui/button";
 
 export function Hero() {
   return (
     <section className="relative overflow-hidden">
+      {/* Social proof banner */}
+      <div className="border-b border-night-800/60 bg-night-900/40">
+        <div className="max-w-4xl mx-auto px-5 md:px-6 py-3 flex items-center justify-center gap-2 text-[13px] text-night-400">
+          <Scissors className="h-3.5 w-3.5 text-mint-500 shrink-0" />
+          <span>Trusted by barber shops, nail salons, and solo operators across the US</span>
+        </div>
+      </div>
+
       <div className="max-w-4xl mx-auto px-5 md:px-6 pt-20 md:pt-24 pb-28 md:pb-32 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -25,9 +33,9 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-4xl md:text-[56px] leading-[1.08] font-bold tracking-tight text-white"
         >
-          Your phone line,
+          Keep Cutting.
           <br />
-          answered by AI
+          We&apos;ll Answer the Phone.
         </motion.h1>
 
         <motion.p
@@ -36,9 +44,8 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mt-7 text-base md:text-[19px] leading-relaxed text-night-400 max-w-2xl mx-auto"
         >
-          NightOwl picks up after-hours calls, books appointments on your
-          calendar, and sends you a text summary. Set up in five minutes.
-          No contracts.
+          NightOwl picks up after-hours calls, books appointments in your chair
+          calendar, and texts you a summary. Set up in five minutes. No contracts.
         </motion.p>
 
         <motion.div
@@ -57,6 +64,10 @@ export function Hero() {
           </a>
           <div className="flex flex-col sm:flex-row items-center gap-3">
             <Button href="#pricing">Start free trial</Button>
+            <Button href="#" variant="secondary">
+              <Play className="h-4 w-4 mr-1.5" />
+              Hear a Sample Call
+            </Button>
             <Button href="#how-it-works" variant="secondary">
               See how it works
             </Button>

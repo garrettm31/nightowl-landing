@@ -32,6 +32,6 @@ export const FAQ_ITEMS = [
   {
     question: "What types of businesses use NightOwl?",
     answer:
-      "Dental offices, law firms, salons, medical practices, veterinary clinics, home services — any small business that gets calls after hours and wants to stop losing them to voicemail.",
+      "Barber shops and solo barbers are our most common customers — NightOwl fits naturally into a one-chair or multi-chair shop. We also serve nail salons, dental offices, law firms, medical practices, veterinary clinics, and any small business that gets calls after hours.",
   },
 ];

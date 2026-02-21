@@ -24,7 +24,7 @@ const steps = [
     icon: Rocket,
     title: "Go live",
     description:
-      "NightOwl answers calls, books appointments, and texts you summaries. You just show up.",
+      "NightOwl answers calls, fills your chairs, and texts you a summary of every booking. You just show up and cut.",
   },
 ];
 
