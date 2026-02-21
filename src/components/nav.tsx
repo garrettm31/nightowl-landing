@@ -26,11 +26,11 @@ export function Nav() {
               {/* Head */}
               <ellipse cx="16" cy="17" rx="10" ry="11" fill="white" />
               {/* Left eye ring */}
-              <circle cx="12" cy="15" r="4.5" fill="#635bff" />
+              <circle cx="12" cy="15" r="4.5" fill="#10b981" />
               <circle cx="12" cy="15" r="2.5" fill="white" />
               <circle cx="12.5" cy="14.5" r="1.5" fill="#1a1a2e" />
               {/* Right eye ring */}
-              <circle cx="20" cy="15" r="4.5" fill="#635bff" />
+              <circle cx="20" cy="15" r="4.5" fill="#10b981" />
               <circle cx="20" cy="15" r="2.5" fill="white" />
               <circle cx="20.5" cy="14.5" r="1.5" fill="#1a1a2e" />
               {/* Beak */}
