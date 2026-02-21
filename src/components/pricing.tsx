@@ -1,34 +1,11 @@
 "use client";
 
-import { useState } from "react";
 import { Check } from "lucide-react";
 import { PRICING_TIERS } from "@/lib/pricing-data";
 import { AnimatedSection } from "./ui/animated-section";
 import { SectionHeader } from "./ui/section-header";
 
-async function startCheckout(tierName: string) {
-  const res = await fetch("/api/checkout", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ tier: tierName.toLowerCase() }),
-  });
-  const data = await res.json();
-  if (data.url) {
-    window.location.href = data.url;
-  } else {
-    alert("Something went wrong. Please try again.");
-  }
-}
-
 export function Pricing() {
-  const [loadingTier, setLoadingTier] = useState<string | null>(null);
-
-  async function handleCheckout(tierName: string) {
-    setLoadingTier(tierName);
-    await startCheckout(tierName);
-    setLoadingTier(null);
-  }
-
   return (
     <section id="pricing" className="border-t border-night-800/80">
       <div className="max-w-6xl mx-auto px-5 md:px-6 py-24 md:py-28">
@@ -65,17 +42,16 @@ export function Pricing() {
                 </div>
                 <p className="mt-2 text-[14px] text-night-400">{tier.description}</p>
 
-                <button
-                  onClick={() => handleCheckout(tier.name)}
-                  disabled={loadingTier !== null}
-                  className={`mt-8 block w-full rounded-full py-3 text-center text-[14px] font-medium transition-all disabled:opacity-60 disabled:cursor-not-allowed ${
+                <a
+                  href={`/api/checkout?tier=${tier.name.toLowerCase()}`}
+                  className={`mt-8 block w-full rounded-full py-3 text-center text-[14px] font-medium transition-all ${
                     tier.highlighted
                       ? "bg-owl-500 text-white hover:bg-owl-400"
                       : "bg-night-700 text-night-100 hover:bg-night-600"
                   }`}
                 >
-                  {loadingTier === tier.name ? "Redirecting…" : tier.cta}
-                </button>
+                  {tier.cta}
+                </a>
 
                 <div className="mt-8 pt-8 border-t border-night-700/50 flex-1">
                   <ul className="space-y-3.5">
