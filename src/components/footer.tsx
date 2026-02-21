@@ -5,9 +5,9 @@ export function Footer() {
         <div className="flex items-center gap-2">
           <div className="h-5 w-5 rounded bg-owl-500 flex items-center justify-center">
             <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5">
-              <path d="M8 4L10 10" stroke="white" strokeWidth="2" strokeLinecap="round" />
-              <path d="M24 4L22 10" stroke="white" strokeWidth="2" strokeLinecap="round" />
               <ellipse cx="16" cy="17" rx="10" ry="11" fill="white" />
+              <path d="M7 13 L11 7 L16 2 Q19 0 22 3 Q27 7 25 12 L25 13 Q16 10 7 13 Z" fill="#1e3a8a" />
+              <circle cx="25.5" cy="12" r="1.8" fill="white" />
               <circle cx="12" cy="15" r="4.5" fill="#10b981" />
               <circle cx="12" cy="15" r="2.5" fill="white" />
               <circle cx="12.5" cy="14.5" r="1.5" fill="#1a1a2e" />
