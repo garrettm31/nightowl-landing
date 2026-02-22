@@ -7,6 +7,7 @@ import { Features } from "@/components/features";
 import { Pricing } from "@/components/pricing";
 import { Testimonials } from "@/components/testimonials";
 import { FAQ } from "@/components/faq";
+import { Trust } from "@/components/trust";
 import { CTABanner } from "@/components/cta-banner";
 import { Footer } from "@/components/footer";
 import { Calendar } from "lucide-react";
@@ -20,6 +21,7 @@ export default function Home() {
       <Problem />
       <HowItWorks />
       <Features />
+      <Trust />
       <Pricing />
       <Testimonials />
       <FAQ />

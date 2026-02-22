@@ -31,9 +31,9 @@ const features = [
   },
   {
     icon: Shield,
-    title: "Emergency handling",
+    title: "Safe & reliable by design",
     description:
-      "Detects urgent situations and responds with your configured emergency message. Never gives medical, legal, or financial advice.",
+      "Only books slots that exist in your real calendar — no double-booking, no invented availability. Detects urgent situations and routes them appropriately. Never gives advice outside its lane.",
   },
   {
     icon: Timer,

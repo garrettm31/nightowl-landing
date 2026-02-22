@@ -25,6 +25,16 @@ export const FAQ_ITEMS = [
       "Absolutely. You set your greeting, business hours, appointment duration, and emergency message. NightOwl uses all of this to respond naturally and accurately.",
   },
   {
+    question: "What if the AI makes a mistake or says something wrong?",
+    answer:
+      "NightOwl texts you a summary after every single call — caller name, what was discussed, and any booking it made. You always have full visibility. If something looks off, you can follow up with the client directly. The AI only books slots that exist in your calendar, so it can't double-book or invent availability.",
+  },
+  {
+    question: "Will my clients know they're talking to an AI?",
+    answer:
+      "Most don't ask, and NightOwl sounds natural enough that many callers don't notice. If a client asks directly, NightOwl is honest — it will tell them it's an automated assistant. It never pretends to be a human employee. That said, clients mostly care that someone answered and their appointment got booked.",
+  },
+  {
     question: "What if I want to cancel?",
     answer:
       "No contracts, no cancellation fees. Cancel anytime from your dashboard. Your account stays active through the end of your billing period.",
