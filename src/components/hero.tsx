@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Phone, Play, Scissors } from "lucide-react";
+import { Scissors } from "lucide-react";
 import { Button } from "./ui/button";
 
 export function Hero() {
@@ -33,7 +33,7 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-4xl md:text-[56px] leading-[1.08] font-bold tracking-tight text-white"
         >
-          Keep Cutting.
+          Keep Working.
           <br />
           We&apos;ll Answer the Phone.
         </motion.h1>
@@ -52,26 +52,12 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="mt-10 flex flex-col items-center gap-4"
+          className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3"
         >
-          <a
-            href="tel:+18883115214"
-            className="inline-flex items-center gap-3 bg-owl-500 hover:bg-owl-400 text-white rounded-2xl px-9 py-4 text-[18px] font-semibold transition-all hover:shadow-xl hover:shadow-owl-500/20"
-          >
-            <Phone className="h-5 w-5 shrink-0" />
-            <span>Call a Demo Line</span>
-            <span className="opacity-75 font-normal text-[15px]">(888) 311-5214</span>
-          </a>
-          <div className="flex flex-col sm:flex-row items-center gap-3">
-            <Button href="#pricing">Start free trial</Button>
-            <Button href="#" variant="secondary">
-              <Play className="h-4 w-4 mr-1.5" />
-              Hear a Sample Call
-            </Button>
-            <Button href="#how-it-works" variant="secondary">
-              See how it works
-            </Button>
-          </div>
+          <Button href="https://calendly.com/YOUR_LINK_HERE" >Book a Demo</Button>
+          <Button href="#how-it-works" variant="secondary">
+            See how it works
+          </Button>
         </motion.div>
 
         <motion.p
