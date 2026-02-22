@@ -54,7 +54,7 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3"
         >
-          <Button href="https://calendly.com/YOUR_LINK_HERE" >Book a Demo</Button>
+          <Button href="https://cal.com/garrett-martel-sbxrdo" >Book a Demo</Button>
           <Button href="#how-it-works" variant="secondary">
             See how it works
           </Button>

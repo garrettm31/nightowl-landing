@@ -29,7 +29,7 @@ export default function Home() {
       {/* Sticky mobile bottom bar */}
       <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-night-950/95 backdrop-blur-md border-t border-night-700/60 px-5 py-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))]">
         <a
-          href="https://calendly.com/YOUR_LINK_HERE"
+          href="https://cal.com/garrett-martel-sbxrdo"
           className="flex items-center justify-center gap-2 w-full bg-owl-500 hover:bg-owl-400 text-white rounded-xl py-3.5 text-[15px] font-semibold transition-all"
         >
           <Calendar className="h-4 w-4 shrink-0" />
