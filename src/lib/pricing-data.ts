@@ -30,7 +30,7 @@ export const PRICING_TIERS: PricingTier[] = [
   },
   {
     name: "24/7",
-    price: 199,
+    price: 99,
     minutesIncluded: 150,
     overageRate: 0.50,
     description: "24/7 Receptionist Service",
@@ -48,7 +48,7 @@ export const PRICING_TIERS: PricingTier[] = [
   },
   {
     name: "24/7 Pro",
-    price: 190,
+    price: 199,
     minutesIncluded: 250,
     overageRate: 0.50,
     description: "Receptionist Service for High Volume Businesses",
