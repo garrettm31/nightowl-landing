@@ -15,7 +15,7 @@ export const PRICING_TIERS: PricingTier[] = [
     price: 40,
     minutesIncluded: 70,
     overageRate: 0.50,
-    description: "Coverage when your shop is closed",
+    description: "After Hours Calls",
     features: [
       "70 minutes/month included",
       "Evenings + weekend coverage",
@@ -33,7 +33,7 @@ export const PRICING_TIERS: PricingTier[] = [
     price: 99,
     minutesIncluded: 150,
     overageRate: 0.50,
-    description: "Full coverage — never miss a call",
+    description: "24/7 Receptionist Service",
     features: [
       "150 minutes/month included",
       "24/7 coverage, always on",
@@ -51,7 +51,7 @@ export const PRICING_TIERS: PricingTier[] = [
     price: 190,
     minutesIncluded: 250,
     overageRate: 0.50,
-    description: "For busy multi-chair shops",
+    description: "Receptionist Service for High Volume Businesses",
     features: [
       "250 minutes/month included",
       "Everything in 24/7, plus:",
