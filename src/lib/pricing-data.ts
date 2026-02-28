@@ -12,7 +12,7 @@ export interface PricingTier {
 export const PRICING_TIERS: PricingTier[] = [
   {
     name: "After-Hours",
-    price: 40,
+    price: 49,
     minutesIncluded: 70,
     overageRate: 0.50,
     description: "After Hours Calls",
@@ -30,7 +30,7 @@ export const PRICING_TIERS: PricingTier[] = [
   },
   {
     name: "24/7",
-    price: 99,
+    price: 199,
     minutesIncluded: 150,
     overageRate: 0.50,
     description: "24/7 Receptionist Service",
