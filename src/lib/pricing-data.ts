@@ -1,7 +1,7 @@
 export interface PricingTier {
   name: string;
   price: number;
-  callsIncluded: number;
+  minutesIncluded: number;
   overageRate: number;
   description: string;
   features: string[];
@@ -11,58 +11,54 @@ export interface PricingTier {
 
 export const PRICING_TIERS: PricingTier[] = [
   {
-    name: "Starter",
-    price: 39,
-    callsIncluded: 50,
-    overageRate: 1.5,
-    description: "Perfect for single-chair and solo barbers",
+    name: "After-Hours",
+    price: 40,
+    minutesIncluded: 70,
+    overageRate: 0.50,
+    description: "Coverage when your shop is closed",
     features: [
-      "Up to 50 calls/month",
+      "70 minutes/month included",
+      "Evenings + weekend coverage",
       "1 local phone number",
       "Appointment booking (Google Calendar)",
-      "SMS + email notifications",
-      "Custom greeting",
-      "After-hours or 24/7 mode",
+      "SMS notifications on every call",
+      "Custom greeting & business info",
       "Email support",
     ],
     cta: "Start Free Trial",
     highlighted: false,
   },
   {
-    name: "Pro",
+    name: "24/7",
     price: 99,
-    callsIncluded: 150,
-    overageRate: 1.0,
-    description: "For busy shops with multiple barbers",
+    minutesIncluded: 150,
+    overageRate: 0.50,
+    description: "Full coverage — never miss a call",
     features: [
-      "Up to 150 calls/month",
-      "2 phone numbers",
-      "Everything in Starter, plus:",
+      "150 minutes/month included",
+      "24/7 coverage, always on",
+      "1 local phone number",
+      "Appointment booking (Google Calendar)",
+      "SMS notifications on every call",
       "Call recordings + transcripts",
-      "Daily digest email",
-      "Bilingual (English + Spanish)",
-      "Zapier + CRM integrations",
       "Priority support",
     ],
     cta: "Start Free Trial",
     highlighted: true,
   },
   {
-    name: "Enterprise",
-    price: 199,
-    callsIncluded: 500,
-    overageRate: 0.75,
-    description: "For multi-location and high-volume businesses",
+    name: "24/7 Pro",
+    price: 190,
+    minutesIncluded: 250,
+    overageRate: 0.50,
+    description: "For busy multi-chair shops",
     features: [
-      "Up to 500 calls/month",
-      "5 phone numbers",
-      "Everything in Pro, plus:",
+      "250 minutes/month included",
+      "Everything in 24/7, plus:",
+      "Higher call volume capacity",
       "Analytics dashboard",
-      "Multi-location routing",
-      "Custom API access",
       "Dedicated onboarding",
       "Phone + chat support",
-      "99.9% uptime SLA",
     ],
     cta: "Start Free Trial",
     highlighted: false,
