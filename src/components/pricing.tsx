@@ -67,10 +67,6 @@ export function Pricing() {
                   </ul>
                 </div>
 
-                <p className="mt-6 text-[12px] text-night-500">
-                  Then ${tier.overageRate.toFixed(2)}/min after {tier.minutesIncluded}{" "}
-                  min
-                </p>
               </div>
             </AnimatedSection>
           ))}
